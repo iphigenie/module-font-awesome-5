@@ -17,27 +17,33 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     /**
      * @var string
      */
+    const CONFIG_PATH_ADD_SHIM = 'swissup_fontawesome5/general/add_shim';
+
+    /**
+     * @var string
+     */
     const CONFIG_PATH_USE_PRO = 'swissup_fontawesome5/general/use_pro';
 
     /**
      * @var string
      */
-    const ASSET_REMOTE_URL = 'https://use.fontawesome.com/releases/v5.3.1/css/all.css';
+    const ASSET_REMOTE_URL = 'https://use.fontawesome.com/releases/v5.13.0/css/all.css';
+    const ASSET_REMOTE_URL2 = 'https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css';
 
     /**
      * @var string
      */
-    const ASSET_LOCAL_URL = 'Swissup_FontAwesome5::fontawesome-free-5.3.1-web/css/all.min.css';
+    const ASSET_LOCAL_URL = 'Swissup_FontAwesome5::fontawesome-free-5.13.0-web/css/all.min.css';
 
     /**
      * @var string
      */
-    const ASSET_PRO_REMOTE_URL = 'https://pro.fontawesome.com/releases/v5.3.1/css/all.css';
+    const ASSET_PRO_REMOTE_URL = 'https://pro.fontawesome.com/releases/v5.13.0/css/all.css';
 
     /**
      * @var string
      */
-    const ASSET_PRO_LOCAL_URL = 'Swissup_FontAwesome5::fontawesome-pro-5.3.1-web/css/all.min.css';
+    const ASSET_PRO_LOCAL_URL = 'Swissup_FontAwesome5::fontawesome-pro-5.13.0-web/css/all.min.css';
 
     /**
      * Retrieve isFontAwesomeEnabled flag

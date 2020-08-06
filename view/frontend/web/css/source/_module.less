@@ -1,0 +1,42 @@
+//
+// Fixing icons from Argento etc.
+//
+& when (@media-common = true) {
+@icons__font-name: "Font Awesome 5 Free";
+@icons__font-weight: 900;
+@fblike-custom-button__font-family: "Font Awesome 5 Free";
+@icons__empty-weight: 400;
+
+
+@icon-star-empty: '\f005';
+@icon-compare-empty: '\f362';
+@icon-arrow-up-thin: '\f30c';
+@icon-arrow-right-thin: '\f30b';
+@icon-arrow-down-thin: '\f309';
+@icon-arrow-left-thin: '\f30a';
+
+.icon {
+    font-family: @icons__font-name;
+    font-weight: @icons__font-weight;
+}
+
+
+    .review-control-vote label:before,
+    .rating-summary .rating-result>span:before,
+    .review-control-vote:before, 
+    .rating-summary .rating-result:before {
+        font-family: @icons__font-name;
+        display: inline-block;
+        font-weight: @icons__font-weight;
+    }
+    
+    .review-control-vote {
+        .lib-rating-vote();
+        &:before {
+            .lib-rating-icons-content(
+                @_icon-content: @icon-star-empty
+            );
+            font-weight:@icons__empty-weight;
+        }
+    }
+}
